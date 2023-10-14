@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="portfolio, Jorge Morales, Jorgemomo" />
+    <title>Jorge Morales Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container--header">
+        <img
+          class="img--logo"
+          src="./assets/images/app-development_6188078.png"
+          alt="logo-portfolio"
+        />
+        <nav class="nav--header">
+          <ul>
+            <li><a href="#" rel="index">Inicio</a></li>
+            <li><a href="#about" rel="index">Sobre mi</a></li>
+            <li><a href="#services" rel="index">Servicios</a></li>
+            <li><a href="#contact" rel="index">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- <button
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button> -->
+        <button type="button" class="btn--menu">
+          <img
+            src="./assets/images/menu.png"
+            alt="menu-mobile"
+            class="menu__toggle"
+          />
+        </button>
+      </div>
+
+      <div class="menu--container">
+        <div class="mobile">
+          <nav class="nav--header__mobile">
+            <ul>
+              <li>
+                <a href="#" rel="index" class="menu-item">Inicio</a>
+              </li>
+              <li>
+                <a href="#about" rel="index" class="menu-item">Sobre mi</a>
+              </li>
+              <li>
+                <a href="#services" rel="index" class="menu-item">Servicios</a>
+              </li>
+              <li>
+                <a href="#contact" rel="index" class="menu-item">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="btn--close">
+            <img
+              src="./assets/images/marca-x.png"
+              alt="menu-close"
+              class="menu__close"
+            />
+          </button>
+        </div>
+      </div>
+      <hr />
+    </header>
+    <main>
+      <section class="banner--portfolio">
+        <div class="banner--portfolio__div">
+          <p class="banner--text">Soluciones a tu medida en desarrollo web</p>
+          <p class="banner--text__tech">HTML, CSS, JavaScrip</p>
+          <button class="banner--button">
+            <a href="https://wa.link/83twxt" target="_blank">¡Contáctame!</a>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="about">
+        <button class="btn--about">
+          Conoce un poco sobre mi. <br />¡Clickeamé!
+        </button>
+        <dialog id="modal">
+          <article class="container--profile">
+            <div class="container--profile__styles">
+              <img
+                class="img--profile"
+                src="./assets/images/programmer_5024509.png"
+                alt="profile"
+              />
+              <h3 class="nameProfile">Jorge Morales Mora</h3>
+            </div>
+            <hr class="hrProfile" />
+            <div class="descriptionProfile">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae id quaerat consequatur? Tempora deserunt beatae neque
+                ab nobis iure molestias doloremque! Qui, quibusdam voluptatibus
+                placeat ipsam nihil quasi enim quam.p>
+              </p>
+              <hr />
+              <div class="technologies">
+                <h3>Technologies</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                  <li>SASS</li>
+                </ul>
+              </div>
+            </div>
+            <img
+              class="img--decorative--profile"
+              src="./assets/images/icon-decorative2.png"
+              alt="decorative-icon"
+            />
+          </article>
+          <button class="closeModal">X</button>
+        </dialog>
+      </section>
+      <hr />
+      <section id="services">
+        <h2 class="title--center">Servicios que presto</h2>
+        <div class="container--services">
+          <article class="service--card">
+            <h4 class="title--center">Desarrollo páginas web</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              beatae, facilis impedit, sed ea ab dolorem sapiente distinctio
+              natus deserunt repellendus voluptate? Nesciunt ipsum esse
+              accusamus facilis obcaecati, optio voluptatibus?
+            </p>
+          </article>
+          <article class="service--card">
+            <h4 class="title--center">Migración de páginas</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae asperiores dolorum eos magnam tenetur illo sit
+              veritatis similique provident, porro mollitia officiis voluptates
+              ea repudiandae obcaecati libero voluptas nemo nihil?
+            </p>
+          </article>
+          <article class="service--card">
+            <h4 class="title--center">Diseño de paginas</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam
+              eos incidunt porro laudantium reprehenderit aspernatur quod
+              inventore, voluptas fugit voluptatem, veritatis unde dicta
+              perferendis voluptates repellendus sunt dolor rem.
+            </p>
+          </article>
+        </div>
+      </section>
+      <hr />
+      <section id="contact" class="form">
+        <h2 class="title--center">¡Contáctame por correo!</h2>
+        <div class="formulary">
+          <form method="post" name="contactFormulary">
+            <fieldset class="formulary--arrange">
+              <legend>Información del contacto</legend>
+              <!-- <label>Nombre: <input type="text" /></label> -->
+              <label class="labelForm" for="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ingrese su nombre"
+              />
+
+              <!-- <label>Correo: <input type="email" /></label> -->
+              <label class="labelForm" for="mail">Correo:</label>
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="Ingrese su correo electrónico"
+              />
+
+              <!-- <label
+                >¿Qué servicio requiere?
+                <textarea name="service" id="serviceTextarea"></textarea>
+              </label> -->
+              <label class="labelForm" for="textarea"
+                >¿Qué servicio requiere?</label
+              >
+              <textarea
+                name="textarea"
+                id="textarea"
+                placeholder="Ingrese su solicitud"
+                cols="50"
+                rows="5"
+              ></textarea>
+
+              <button
+                class="btnForm"
+                name="submit"
+                type="submit"
+                onclick="Email.send()"
+              >
+                Enviar
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer">
+      <div class="container--footer">
+        <nav class="nav--footer">
+          <ul>
+            <li><a href="#" rel="index">Inicio</a></li>
+            <li><a href="#about" rel="index">Sobre mi</a></li>
+            <li><a href="#services" rel="index">Servicios</a></li>
+            <li><a href="#contact" rel="index">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="socialLinks">
+          <p>Redes sociales</p>
+          <ul class="social__links">
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="links"
+                  src="./assets/images/social-links/instagram-svg.svg"
+                  alt="Instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/" target="_blank">
+                <img
+                  class="links"
+                  src="./assets/images/social-links/github-svg.svg"
+                  alt="GitHub"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="links"
+                  src="./assets/images/social-links/facebook-svg.svg"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://co.linkedin.com/" target="_blank">
+                <img
+                  class="links"
+                  src="./assets/images/social-links/linkedin-svg.svg"
+                  alt="LinkedIn"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="ubication-text">Mi ubicación</p>
+          <iframe
+            class="ubication"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.69980776375!2d-75.6636143285038!3d6.244367697167081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1696886732782!5m2!1ses!2sco"
+            width="250"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <p class="copyright">&copy; 2023 - Portafolio by: Jorge Morales</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js" defer></script>
+  </body>
+</html>
