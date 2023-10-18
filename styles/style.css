@@ -55,6 +55,21 @@ hr {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(30deg)
+  }
+
+  50% {
+    transform: rotate(-30deg)
+  }
+
+  100% {
+    transform: rotate(30deg)
+  }
 }
 
 .nav--header {

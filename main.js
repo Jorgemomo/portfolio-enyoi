@@ -47,12 +47,22 @@ menuItems.forEach((item) => {
 });
 
 const logoImg = document.querySelector(".img--logo");
-const href = document.querySelector("#href");
+const styleDocument = document.querySelector("#href");
 
 logoImg.addEventListener("click", () => {
-  if (href.value === "./styles/style.css") {
-    href.value = "./styles/stylesChange.css";
+  const href = styleDocument.getAttribute("href");
+
+  // switch (href) {
+  //   case "./styles/style.css":
+  //     styleDocument.setAttribute("href", "./styles/stylesChange.css");
+  //     break;
+  //   default:
+  //     styleDocument.setAttribute("href", "./styles/style.css");
+  //     break;
+  // }
+  if (href === "./styles/style.css") {
+    styleDocument.setAttribute("href", "./styles/stylesChange.css");
   } else {
-    href.value = "./styles/style.css";
+    styleDocument.setAttribute("href", "./styles/style.css");
   }
 });
