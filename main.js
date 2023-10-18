@@ -45,3 +45,14 @@ menuItems.forEach((item) => {
     containerMenu.classList.toggle("active");
   });
 });
+
+const logoImg = document.querySelector(".img--logo");
+const href = document.querySelector("#href");
+
+logoImg.addEventListener("click", () => {
+  if (href.value === "./styles/style.css") {
+    href.value = "./styles/stylesChange.css";
+  } else {
+    href.value = "./styles/style.css";
+  }
+});
