@@ -380,7 +380,7 @@ dialog::backdrop {
       padding: 1rem 1.5rem;
       border-color: #18f5f5;
       border-radius: 15px;
-      box-shadow: 6px 5px 6px 1px rgba(24, 245, 245, 0.7);
+      box-shadow: 6px 5px 6px 1px rgba(255, 255, 255, 0.7);
       text-shadow: 2px 2px 1px rgba(24, 245, 245, 0.7);
 
       .labelForm {
@@ -666,7 +666,7 @@ dialog::backdrop {
   #contact {
     .formulary {
       .formulary--arrange {
-        padding: 1rem 1.2rem;
+        padding: 1rem 0.3rem;
 
         #textarea {
           width: 17rem;

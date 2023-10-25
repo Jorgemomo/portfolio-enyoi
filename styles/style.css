@@ -666,7 +666,7 @@ dialog::backdrop {
   #contact {
     .formulary {
       .formulary--arrange {
-        padding: 1rem 1.2rem;
+        padding: 1rem 0.3rem;
 
         #textarea {
           width: 17rem;
